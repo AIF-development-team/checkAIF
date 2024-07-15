@@ -227,4 +227,5 @@ def run(file: str, input_file: str):
             'Program Failed While Attempting to Read AIF File') from exc
     errors += required_keynames(data_dict, json_dict)
     errors += var_type_checker(data_dict, json_dict)
-    print(errors)
+    #print(errors)
+    return errors
