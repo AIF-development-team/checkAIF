@@ -32,6 +32,6 @@ repos:
     - id: all-errors
       name: All Errors
       description: Contains all errors in upcoming test together
-      entry: python ./.github/runner.py test_AIF0
+      entry: python ./tests/runner.py
       language: system
       files: NK_DUT-6_LP_N2_114PKT.aif output0.txt
