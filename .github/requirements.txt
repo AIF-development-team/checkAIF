@@ -1,4 +1,3 @@
-json
 gemmi
 datetime
 numpy
