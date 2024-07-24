@@ -3,4 +3,3 @@ datetime
 numpy
 pylint
 pre-commit
-unittest
