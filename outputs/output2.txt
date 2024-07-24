@@ -1,0 +1,2 @@
+ERROR: date is not in ISO standard or YYYY-MM-DD format
+ERROR: _exptl_date: 1900/01/01 <class 'str'> has incorrect data type

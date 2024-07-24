@@ -34,4 +34,4 @@ repos:
       description: Contains all errors in upcoming test together
       entry: python ./tests/runner.py
       language: system
-      files: NK_DUT-6_LP_N2_114PKT.aif output0.txt
+      pass_filenames: false

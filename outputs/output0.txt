@@ -1,0 +1,14 @@
+ERROR: Loop names do not match. All loops must be grouped into adsorp and desorp
+ERROR: Required keyname '_exptl_method' not found in AIF file
+ERROR: Required keyname '_exptl_isotherm_type' not found in AIF file
+ERROR: Required keyname '_exptl_p0' not found in AIF file
+ERROR: Required keyname '_adsnt_sample_density' not found in AIF file
+ERROR: Required keyname '_adsnt_degas_summary' not found in AIF file
+ERROR: Required keyname '_adsnt_degas_temperature' not found in AIF file
+ERROR: Required keyname '_adsnt_degas_time' not found in AIF file
+ERROR: Required keyname '_simltn_forcefield_adsorptive' not found in AIF file
+ERROR: Required keyname '_units_density' not found in AIF file
+ERROR: Required keyname '_units_time' not found in AIF file
+ERROR: Required keyname '_units_composition_type' not found in AIF file
+ERROR: _adsnt_sample_density is dependent on _units_density, but _units_density was not found in AIF file
+ERROR: _adsnt_degas_time is dependent on _units_time, but _units_time was not found in AIF file
