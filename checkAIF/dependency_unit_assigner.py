@@ -16,11 +16,11 @@ def dependency_unit_assigner(keyname: str, data_dict: dict):
         #print(keystub)
 
         if keystub == 'comment':
-            print('a')
-            #pass
+            #print('a')
+            pass
         elif keystub == 'date':
-            print('b)')
-            #pass
+            #print('b)')
+            pass
         elif keystub != 'amount':
             try:
                 data_dict[units]
