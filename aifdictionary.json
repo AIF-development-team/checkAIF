@@ -9,6 +9,7 @@
      {"data name": "_exptl_isotherm_type", "description":"description of isotherm type, eg. absolute, excess, net (string)", "variable_type": "string", "required": "True", "depend_on": [""], "label": "Experimental Isotherm Type", "loop_var": "False"},
      {"data name": "_exptl_p0", "description": "saturation pressure of the experiment at the temperature of the experiment (float)", "variable_type": "float", "required": "True", "depend_on": ["_units_pressure"], "label": "Experimental p0", "loop_var": "False"},
      {"data name": "_exptl_digitizer", "description":"name of the person who digitized the experiment (string)", "variable_type": "string", "required": "False", "depend_on": [""], "label": "Experimental Digitizer", "loop_var": "False"},
+     {"data name": "_exptl_comment", "description":"comment left by user of aif generator (string)", "variable_type": "string", "required": "False", "depend_on": [""], "label": "Experimental Comment", "loop_var": "False"},
 
      {"data name": "_adsnt_sample_mass", "description":"mass of the sample (float)", "variable_type": "float", "required": "True", "depend_on": ["_units_mass"], "label": "Adsorbent Sample Mass", "loop_var": "False"},
      {"data name": "_adsnt_sample_density", "description":"density of the sample (float)", "variable_type": "float", "required": "True", "depend_on": ["_units_density"], "label": "Adsorbent Sample Density", "loop_var": "False"},
@@ -53,6 +54,7 @@
      {"data name": "_desorp_amount_net", "description": "net amount adsorbed during the desorption measurement (float)", "variable_type": "float", "required": "False", "depend_on": ["_adsorp_amount","_units_loading"], "label": "Desorbed Amount Net", "loop_var": "True"},
 
      {"data name": "_audit_aif_version", "description": "version of AIF data names (Github commit hash)", "variable_type": "string", "required": "True", "depend_on": [""], "label": "Audit AIF Version", "loop_var": "False"},
+     {"data name": "_aif_date", "description": "date of AIF file creation", "variable_type": "datetime.datetime", "required": "False", "depend_on": [""], "label": "AIF Date", "loop_var": "False"},
 
      {"data name": "*_uncertainty", "description": "uncertainty associated with value (float)", "variable_type": "float", "required": "False", "depend_on": [""], "label": "Uncertainty", "loop_var": "False"}
 
