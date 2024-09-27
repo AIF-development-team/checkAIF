@@ -19,6 +19,7 @@ def inspect_AIF(file: str, input_file: str):
         raise AttributeError(
             'Program Failed While Attempting to Read AIF File') from exc
     json_dict, errors_json = json_to_dict(input_file)
+
     errors += errors_json
     errors += required_keynames(data_dict, json_dict)
     errors += var_type_checker(data_dict, json_dict)

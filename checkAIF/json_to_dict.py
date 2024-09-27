@@ -28,4 +28,11 @@ def json_to_dict(input_file: str):
             errors_json += 'ERROR: Unknown variable type: ' + rule[
                 'variable_type'] + '\n'
 
+        #convert text true/false to true booleans
+        for key in rule:
+            if rule[key] == 'True':
+                rule[key] = True
+            elif rule[key] == 'False':
+                rule[key] = False
+
     return json_dict, errors_json
