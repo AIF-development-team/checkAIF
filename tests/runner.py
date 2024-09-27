@@ -68,103 +68,103 @@ class Test_checkAIF(unittest.TestCase):
                          'Output does not match expected')
         print('Success')
 
-    # def test_AIF2(self):
-    #     """
-    #     Wrong date format
-    #     """
-    #     input_file = './examples/NK_DUT_Error2.aif'
-    #     with open('./outputs/output2.txt', 'r', encoding='utf-8') as handle:
-    #         expected_output = sorted(handle.read().splitlines())
-    #     output = checkAIF.inspect_AIF(input_file, AIF_definition)
-    #     output = sorted(output.splitlines())
+    def test_AIF2(self):
+        """
+        Wrong date format
+        """
+        input_file = './examples/NK_DUT_Error2.aif'
+        with open('./outputs/output2.txt', 'r', encoding='utf-8') as handle:
+            expected_output = sorted(handle.read().splitlines())
+        output = checkAIF.inspect_AIF(input_file, AIF_definition)
+        output = sorted(output.splitlines())
 
-    #     self.assertEqual(expected_output, output,
-    #                      'Output does not match expected')
-    #     print('Success')
+        self.assertEqual(expected_output, output,
+                         'Output does not match expected')
+        print('Success')
 
-    # def test_AIF3(self):
-    #     """
-    #     Test should create an error if loop has non-float data
-    #     """
-    #     input_file = './examples/NK_DUT_Error3.aif'
-    #     with open('./outputs/output3.txt', 'r', encoding='utf-8') as handle:
-    #         expected_output = sorted(handle.read().splitlines())
-    #     output = checkAIF.inspect_AIF(input_file, AIF_definition)
-    #     output = sorted(output.splitlines())
+    def test_AIF3(self):
+        """
+        Test should create an error if loop has non-float data
+        """
+        input_file = './examples/NK_DUT_Error3.aif'
+        with open('./outputs/output3.txt', 'r', encoding='utf-8') as handle:
+            expected_output = sorted(handle.read().splitlines())
+        output = checkAIF.inspect_AIF(input_file, AIF_definition)
+        output = sorted(output.splitlines())
 
-    #     self.assertEqual(expected_output, output,
-    #                      'Output does not match expected')
-    #     print('Success')
+        self.assertEqual(expected_output, output,
+                         'Output does not match expected')
+        print('Success')
 
-    # def test_AIF4(self):
-    #     """
-    #     Fake keyname/keyvalue pair, no units
-    #     """
-    #     input_file = './examples/NK_DUT_Error4.aif'
-    #     with open('./outputs/output4.txt', 'r', encoding='utf-8') as handle:
-    #         expected_output = sorted(handle.read().splitlines())
-    #     output = checkAIF.inspect_AIF(input_file, AIF_definition)
-    #     output = sorted(output.splitlines())
+    def test_AIF4(self):
+        """
+        Fake keyname/keyvalue pair, no units
+        """
+        input_file = './examples/NK_DUT_Error4.aif'
+        with open('./outputs/output4.txt', 'r', encoding='utf-8') as handle:
+            expected_output = sorted(handle.read().splitlines())
+        output = checkAIF.inspect_AIF(input_file, AIF_definition)
+        output = sorted(output.splitlines())
 
-    #     self.assertEqual(expected_output, output,
-    #                      'Output does not match expected')
-    #     print('Success')
+        self.assertEqual(expected_output, output,
+                         'Output does not match expected')
+        print('Success')
 
-    # def test_AIF5(self):
-    #     """
-    #     Fake keyname/keyvalue pair, connected units
-    #     """
-    #     input_file = './examples/NK_DUT_Error5.aif'
-    #     with open('./outputs/output5.txt', 'r', encoding='utf-8') as handle:
-    #         expected_output = sorted(handle.read().splitlines())
-    #     output = checkAIF.inspect_AIF(input_file, AIF_definition)
-    #     output = sorted(output.splitlines())
+    def test_AIF5(self):
+        """
+        Fake keyname/keyvalue pair, connected units
+        """
+        input_file = './examples/NK_DUT_Error5.aif'
+        with open('./outputs/output5.txt', 'r', encoding='utf-8') as handle:
+            expected_output = sorted(handle.read().splitlines())
+        output = checkAIF.inspect_AIF(input_file, AIF_definition)
+        output = sorted(output.splitlines())
 
-    #     self.assertEqual(expected_output, output,
-    #                      'Output does not match expected')
-    #     print('Success')
+        self.assertEqual(expected_output, output,
+                         'Output does not match expected')
+        print('Success')
 
-    # def test_AIF6(self):
-    #     """
-    #     Missing dependent unit
-    #     """
-    #     input_file = './examples/NK_DUT_Error6.aif'
-    #     with open('./outputs/output6.txt', 'r', encoding='utf-8') as handle:
-    #         expected_output = sorted(handle.read().splitlines())
-    #     output = checkAIF.inspect_AIF(input_file, AIF_definition)
-    #     output = sorted(output.splitlines())
+    def test_AIF6(self):
+        """
+        Missing dependent unit
+        """
+        input_file = './examples/NK_DUT_Error6.aif'
+        with open('./outputs/output6.txt', 'r', encoding='utf-8') as handle:
+            expected_output = sorted(handle.read().splitlines())
+        output = checkAIF.inspect_AIF(input_file, AIF_definition)
+        output = sorted(output.splitlines())
 
-    #     self.assertEqual(expected_output, output,
-    #                      'Output does not match expected')
-    #     print('Success')
+        self.assertEqual(expected_output, output,
+                         'Output does not match expected')
+        print('Success')
 
-    # def test_AIF7(self):
-    #     """
-    #     Missing required keyname
-    #     """
-    #     input_file = './examples/NK_DUT_Error7.aif'
-    #     with open('./outputs/output7.txt', 'r', encoding='utf-8') as handle:
-    #         expected_output = sorted(handle.read().splitlines())
-    #     output = checkAIF.inspect_AIF(input_file, AIF_definition)
-    #     output = sorted(output.splitlines())
+    def test_AIF7(self):
+        """
+        Missing required keyname
+        """
+        input_file = './examples/NK_DUT_Error7.aif'
+        with open('./outputs/output7.txt', 'r', encoding='utf-8') as handle:
+            expected_output = sorted(handle.read().splitlines())
+        output = checkAIF.inspect_AIF(input_file, AIF_definition)
+        output = sorted(output.splitlines())
 
-    #     self.assertEqual(expected_output, output,
-    #                      'Output does not match expected')
-    #     print('Success')
+        self.assertEqual(expected_output, output,
+                         'Output does not match expected')
+        print('Success')
 
-    # def test_AIF8(self):
-    #     """
-    #     Grouped loop names dont match
-    #     """
-    #     input_file = './examples/NK_DUT_Error8.aif'
-    #     with open('./outputs/output8.txt', 'r', encoding='utf-8') as handle:
-    #         expected_output = sorted(handle.read().splitlines())
-    #     output = checkAIF.inspect_AIF(input_file, AIF_definition)
-    #     output = sorted(output.splitlines())
+    def test_AIF8(self):
+        """
+        Grouped loop names dont match
+        """
+        input_file = './examples/NK_DUT_Error8.aif'
+        with open('./outputs/output8.txt', 'r', encoding='utf-8') as handle:
+            expected_output = sorted(handle.read().splitlines())
+        output = checkAIF.inspect_AIF(input_file, AIF_definition)
+        output = sorted(output.splitlines())
 
-    #     self.assertEqual(expected_output, output,
-    #                      'Output does not match expected')
-    #     print('Success')
+        self.assertEqual(expected_output, output,
+                         'Output does not match expected')
+        print('Success')
 
 
 if __name__ == '__main__':
