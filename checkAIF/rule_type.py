@@ -13,10 +13,10 @@ def rule_type(keyname: str, json_rules: dict):
     if keyname in [x['data name'] for x in json_rules]:  # pylint: disable=no-else-return
         target_index = [x['data name'] for x in json_rules].index(keyname)
         var_type = json_rules[target_index]['variable_type']
-        missing = 'False'
+        missing = False
         return var_type, rule_errors, missing
     else:
         rule_errors += "WARNING: AIF keyname '" + keyname + "' not found in json dictionary file\n"
         var_type = ''
-        missing = 'True'
+        missing = True
     return var_type, rule_errors, missing

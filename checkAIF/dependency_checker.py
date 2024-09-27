@@ -11,7 +11,7 @@ def dependency_checker(data_dict: dict, json_dict: dict):
     error_dep_chkr = ''
 
     for item in json_dict:
-        if item['depend_on'] != [''] and item['loop_var'] == 'False':
+        if item['depend_on'] != [''] and item['loop_var'] is False:
             for keyname in item['depend_on']:
                 try:
                     data_dict[keyname]

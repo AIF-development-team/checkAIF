@@ -18,11 +18,11 @@ def var_type_checker(data_dict: dict, json_dict: dict):
                 errors += rule_errors
             if var_type == type(data_dict[item]):
                 pass
-            elif missing == 'False':
+            elif not missing:
                 errors += 'ERROR: ' + item + ': ' + str(
                     data_dict[item]) + ' ' + str(type(
                         data_dict[item])) + ' has incorrect data type\n'
-            elif missing == 'True':
+            elif missing:
                 errors_dua = dependency_unit_assigner(item, data_dict)
                 errors += errors_dua
 

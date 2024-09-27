@@ -11,7 +11,7 @@ def required_keynames(aif_dict: dict, rules_dict: dict):
     errors = ''
 
     for item in rules_dict:
-        if item['required'] == 'True':
+        if item['required']:
             target_index = item['data name']
             try:
                 aif_dict[target_index]
